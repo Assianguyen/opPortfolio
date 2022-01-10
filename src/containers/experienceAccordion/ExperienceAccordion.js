@@ -3,6 +3,7 @@ import ExperienceCard from "../../components/experienceCard/ExperienceCard.js";
 import "./ExperienceAccordion.css";
 import { Accordion, Panel } from "baseui/accordion";
 import { DarkTheme, LightTheme, ThemeProvider } from "baseui";
+import Sphere from "../../components/sphere/sphereimg";
 
 function ExperienceAccordion(props) {
   const theme = props.theme;
@@ -28,6 +29,7 @@ function ExperienceAccordion(props) {
           })}
         </Accordion>
       </ThemeProvider>
+      <Sphere />
     </div>
   );
 }

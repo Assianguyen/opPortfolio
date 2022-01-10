@@ -6,6 +6,8 @@ import { Fade } from "react-reveal";
 import { useHistory } from "react-router-dom";
 import FeelingProud from "./FeelingProud";
 import { style } from "glamor";
+import Type from "../../pages/home/Type";
+import Sphere from "../../components/sphere/sphereimg";
 
 export default function Greeting(props) {
   const theme = props.theme;
@@ -25,6 +27,7 @@ export default function Greeting(props) {
           <div className="greeting-text-div">
             <div>
               <h1 className="greeting-text">{greeting.title}</h1>
+              <br></br>
               <p
                 className="greeting-text-p subTitle"
                 style={{ color: theme.secondaryText }}
@@ -33,7 +36,19 @@ export default function Greeting(props) {
                 <span style={{ color: theme.accentColor }}>
                   {greeting.full_name}.{" "}
                 </span>
-                {greeting.subTitle}
+                {greeting.subTitle1}
+              </p>
+              <p
+                className="greeting-text-p subTitle2"
+                style={{ color: theme.secondaryText }}
+              >
+                {greeting.subTitle2}
+              </p>
+              <p
+                className="greeting-text-bigger Function_title"
+                style={{ color: theme.accentColor }}
+              >
+                <Type />
               </p>
               <SocialMedia />
               <div className="portfolio-repo-btn-div">
@@ -41,16 +56,17 @@ export default function Greeting(props) {
                   {...styles}
                   className="button"
                   onClick={() => {
-                    history.push("/contact");
+                    history.push("/CV");
                   }}
                 >
-                  Contact Me
+                  About Me
                 </button>
               </div>
             </div>
           </div>
           <div className="greeting-image-div">
-            <FeelingProud theme={theme} />
+            <Sphere />
+            {/* <FeelingProud theme={theme} /> */}
           </div>
         </div>
       </div>

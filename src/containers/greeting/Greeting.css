@@ -9,7 +9,7 @@
   max-width: 1370px;
   padding: 10px 10px;
   margin: 0px auto;
-  margin-top: 2rem;
+  margin-top: 4rem;
   display: block;
 }
 
@@ -71,13 +71,18 @@
 }
 
 /* Media Query */
-@media (max-width: 1380px) {
+@media (max-width: 2000px) {
   .greeting-text {
     font-size: 50px;
   }
 
   .greeting-text-p {
     font-size: 20px;
+  }
+
+  .greeting-text-bigger {
+    font-size: 29px;
+    font-weight: bold;
   }
 
   .greet-main {

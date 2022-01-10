@@ -2,10 +2,12 @@ import React, { useState } from "react";
 import "./Header.css";
 import { Fade } from "react-reveal";
 import { NavLink, Link } from "react-router-dom";
-import { greeting, settings } from "../../portfolio.js";
+import { greeting, settings } from "../../portfolio";
 import { CgSun } from "react-icons/cg/";
 import { HiMoon } from "react-icons/hi";
 import { style } from "glamor";
+
+import { Button, ButtonGroup, DropdownButton, Dropdown } from "react-bootstrap";
 
 function Header(props) {
   const theme = props.theme;
@@ -90,15 +92,31 @@ function Header(props) {
               </NavLink>
             </li>
             <li>
-              <NavLink
+              {/* <NavLink
                 className="ec"
-                to="/education"
-                tag={Link}
+                // to="/education"
+                // tag={Link}
                 activeStyle={{ fontWeight: "bold" }}
                 style={{ borderRadius: 5, color: theme.text }}
               >
-                Education and Certifications
-              </NavLink>
+              </NavLink> */}
+              <div className="nav-item dropdown">
+                <DropdownButton
+                  class="navbar-brand dropdown-toggle"
+                  id="dropdown-basic-button"
+                  title="Descriptive part"
+                >
+                  <ul className="test1">
+                    <Dropdown.Item href="#/Hackathon">Hackathon</Dropdown.Item>
+                    <Dropdown.Item href="#">Another action</Dropdown.Item>
+                    <Dropdown.Item href="#">Something else</Dropdown.Item>
+                    <Dropdown.Item href="#">Something else</Dropdown.Item>
+                    <Dropdown.Item href="#">Something else</Dropdown.Item>
+                    <Dropdown.Item href="#">Something else</Dropdown.Item>
+                    <Dropdown.Item href="#">Something else</Dropdown.Item>
+                  </ul>
+                </DropdownButton>
+              </div>
             </li>
             <li>
               <NavLink
@@ -124,15 +142,27 @@ function Header(props) {
             </li>
             <li>
               <NavLink
-                className="cr"
-                to="/contact"
+                className="cv"
+                to="/CV"
                 tag={Link}
                 activeStyle={{ fontWeight: "bold" }}
                 style={{ borderRadius: 5, color: theme.text }}
               >
-                Contact and Resume
+                CV
               </NavLink>
             </li>
+
+            {/* <li>
+              <NavLink
+                className="cr"
+                to="/test"
+                tag={Link}
+                activeStyle={{ fontWeight: "bold" }}
+                style={{ borderRadius: 5, color: theme.text }}
+              >
+                Test
+              </NavLink>
+            </li> */}
             <button {...styles} onClick={changeTheme}>
               {icon}
             </button>

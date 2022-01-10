@@ -1,0 +1,25 @@
+/* .ReactTable .rt-tbody .rt-tr-group{
+    border-bottom: solid 1px #FFFF;
+} */
+.ReactTable .rt-tbody .rt-tr-group:hover {
+  background-color: #59bdeb;
+}
+
+.ReactTable .rt-tbody .rt-td {
+  border-bottom: solid 1px #ffff;
+  border-right: solid 1px #ffff;
+}
+
+.ReactTable .rt-thead.-header {
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 1px 10px 0 #e3405f;
+  background: #e3405fe3;
+}
+
+.ReactTable .rt-thead .rt-resizable-header {
+  border-right: solid 1px #ffff;
+}
+.test {
+  margin-top: 5%;
+}
