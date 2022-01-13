@@ -1,0 +1,154 @@
+.course-heading-img-div {
+  margin-bottom: 8%;
+  display: flex;
+  justify-content: center;
+}
+
+.lol {
+  display: flex;
+  justify-content: center;
+}
+
+/* margin-left: -2%;
+    margin-bottom: 8%;
+    margin-top: 4%; */
+/* display: flex;
+    justify-content: center; */
+
+.etsi-img-div {
+  display: flex;
+  position: absolute;
+  margin-left: 294px;
+  margin-top: 45px;
+}
+.om2m-img-div {
+  display: flex;
+  position: absolute;
+  margin-top: 93px;
+}
+
+.course-header {
+  font-size: 60px;
+  line-height: 1.1;
+  font-family: "Google Sans Regular";
+  text-align: center;
+}
+
+.course-title {
+  font-size: 40px;
+}
+
+.home1 {
+  margin: 10px 10px 10px 10px;
+  transition: all 0.2s ease-in-out;
+  color: #ffffff;
+}
+
+.home1:hover {
+  box-shadow: 0 2px 10px #2ab0ee;
+  background-color: #2ab0ee;
+  color: #ffffff !important;
+}
+
+.cv1 {
+  margin: 10px 10px 10px 10px;
+  transition: all 0.2s ease-in-out;
+  color: #ffffff;
+}
+
+.cv1:hover {
+  box-shadow: 0 2px 10px #47a148;
+  background-color: #47a148;
+  color: #ffffff !important;
+}
+
+.descriptive {
+  margin: 10px 10px 10px 10px;
+  transition: all 0.2s ease-in-out;
+  color: #ffffff;
+}
+
+.descriptive:hover {
+  box-shadow: 0 2px 10px #eb6559;
+  background-color: #eb6559;
+  color: #ffffff !important;
+}
+
+.course-text {
+  font-size: 20px;
+}
+
+.course-text2 {
+  font-size: 20px;
+  position: relative;
+  margin-top: 18%;
+}
+
+.course-text-div {
+  margin-left: 50px;
+  margin-top: 3%;
+  padding-top: 80px;
+  font-family: "Google Sans Regular";
+}
+
+.course-main-div > * {
+  flex: 1;
+  margin-bottom: 30px;
+}
+
+.course-image-div > * {
+  max-width: 100%;
+  height: auto;
+  margin-top: 100px;
+}
+
+.course-heading {
+  font-size: 50px;
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 10px;
+  font-family: "Google Sans Regular";
+}
+
+/* Media Query */
+@media (max-width: 1380px) {
+  .course-heading {
+    font-size: 40px;
+  }
+  .course-header {
+    font-size: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .course-heading {
+    font-size: 30px;
+    text-align: center;
+  }
+  .course-header {
+    font-size: 30px;
+  }
+  .greeting-text-p {
+    font-size: 16px;
+    line-height: normal;
+  }
+  .course-main-div {
+    flex-direction: column;
+  }
+  .course-text-div {
+    margin-left: 0px;
+    margin: 20px;
+  }
+  .course-text {
+    font-size: 16px;
+  }
+  .course-text-subtitle {
+    font-size: 16px;
+    text-align: center;
+  }
+  .course-image-div {
+    order: 2;
+  }
+  .course-image-div > * {
+    margin-top: 0px;
+  }
+}

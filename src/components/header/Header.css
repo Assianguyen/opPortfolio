@@ -1,5 +1,14 @@
 /* header */
 
+.headerstyle {
+  position: relative;
+  z-index: 100;
+}
+
+.dropdown-menu.show {
+  display: block;
+  transform: translate(2px, 44px) !important;
+}
 .header {
   display: block;
   max-width: 90%;
